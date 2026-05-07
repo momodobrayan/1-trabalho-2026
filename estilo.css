@@ -1,41 +1,42 @@
 /* estilo.css */
 
-/* Fonte geral do corpo */
+/* Corpo do menu */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff; /* fundo branco */
-    color: #000000; /* texto preto padrão */
+    color: #000000; /* texto preto */
     margin: 0;
     padding: 0;
 }
 
-/* Título do restaurante */
+/* Título do restaurante "SAKURA SUSHI" */
 h1#titulo {
-    font-family: 'Brush Script MT', cursive; /* fonte manuscrita semelhante */
-    color: #B22222; /* vermelho escuro */
+    font-family: 'Brush Script MT', cursive; /* fonte manuscrita */
+    color: #B22222; /* vermelho */
     font-size: 48px;
     text-align: center;
     margin-top: 20px;
 }
 
-/* Palavra MENU */
+/* Palavra "MENU" */
 h2#menu {
-    font-family: 'Impact', sans-serif; /* fonte bold */
+    font-family: 'Impact', sans-serif; /* fonte bold e moderna */
     font-size: 36px;
     text-align: center;
     margin: 10px 0 30px 0;
+    color: #000000; /* preto */
 }
 
-/* Seções do menu (Entradas, Temakis etc.) */
+/* Seções do menu: ENTRADAS, TEMAKIS, URUMAKI etc. */
 h3.secao {
     font-family: 'Impact', sans-serif;
     font-size: 24px;
-    color: #B22222; /* vermelho escuro */
+    color: #8B0000; /* vermelho escuro */
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-/* Lista de itens do menu */
+/* Lista de itens de cada seção */
 ul.menu-itens {
     list-style-type: none;
     padding: 0;
@@ -48,16 +49,25 @@ ul.menu-itens li {
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between; /* separa item e preço */
+    color: #000000; /* texto preto */
 }
 
-/* Pontilhado entre o item e o preço */
+/* Nome do item e preço */
 ul.menu-itens li span.item {
     flex: 1;
 }
 
 ul.menu-itens li span.preco {
-    margin-left: 10px;
     font-weight: bold;
+    color: #000000;
+}
+
+/* Pontilhado entre o nome do item e o preço */
+ul.menu-itens li::before {
+    content: "";
+    flex-grow: 1;
+    border-bottom: 1px dotted #000000;
+    margin: 0 5px;
 }
 
 /* Imagens do menu */
@@ -67,7 +77,7 @@ img.sushi-imagem {
     max-width: 200px;
 }
 
-/* Estilo para rodapé ou imagens decorativas */
+/* Rodapé ou imagens decorativas */
 footer img {
     width: 80px;
     position: absolute;
