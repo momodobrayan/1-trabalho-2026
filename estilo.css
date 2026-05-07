@@ -1,6 +1,76 @@
-nav{
+/* estilo.css */
+
+/* Fonte geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* fundo branco */
+    color: #000000; /* texto preto padrão */
+    margin: 0;
+    padding: 0;
+}
+
+/* Título do restaurante */
+h1#titulo {
+    font-family: 'Brush Script MT', cursive; /* fonte manuscrita semelhante */
+    color: #B22222; /* vermelho escuro */
+    font-size: 48px;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 60px;
-    color: rgb(107, 2, 2); Sakura sushi
-    
+    margin-top: 20px;
+}
+
+/* Palavra MENU */
+h2#menu {
+    font-family: 'Impact', sans-serif; /* fonte bold */
+    font-size: 36px;
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+
+/* Seções do menu (Entradas, Temakis etc.) */
+h3.secao {
+    font-family: 'Impact', sans-serif;
+    font-size: 24px;
+    color: #B22222; /* vermelho escuro */
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Lista de itens do menu */
+ul.menu-itens {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+ul.menu-itens li {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between; /* separa item e preço */
+}
+
+/* Pontilhado entre o item e o preço */
+ul.menu-itens li span.item {
+    flex: 1;
+}
+
+ul.menu-itens li span.preco {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Imagens do menu */
+img.sushi-imagem {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+}
+
+/* Estilo para rodapé ou imagens decorativas */
+footer img {
+    width: 80px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
